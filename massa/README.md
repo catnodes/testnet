@@ -149,3 +149,28 @@ systemctl enable massad     --> mengaktifkan service
 systemctl restart massad    --> merestart node
 systemctl status massad     --> untuk cek status
 ```
+
+
+## Update Node
+
+Untuk update node kita tidak perlu mematikan nodenya. Berikut perintahnya ...
+
+```
+sudo apt update && sudo apt upgrade -y
+rustup update
+rustup default nightly
+cd massa/
+git stash
+git remote set-url origin https://github.com/massalabs/massa.git
+git checkout testnet
+git pull
+```
+
+
+## Menghapus node
+
+```
+systemctl stop massad
+sudo rm -rf $HOME/massa
+sudo rm -rf /etc/systemd/system/massad.service
+```
