@@ -43,8 +43,6 @@ cd $HOME/massa/massa-client/; screen -R massa_client; cd
 cargo run --release -- -p [YOUR_PASSWORD]
 ````
 
->Detach lagi dengan `ctrl A + D`
-
 
 ## Buat Wallet Baru, Routing, dan Hitung Insentif
 
@@ -55,9 +53,11 @@ wallet_generate_secret_key
 wallet_info
 ```
 
+Jangan lupa untuk menyimpan dengan aman _private_key_ dan salin alamat walletnya. 
+
 ### Claim faucet, buy rolls, dan staking rolls
 
-Jangan lupa untuk menyimpan dengan aman _private_key_ dan salin alamat walletnya. Langkah berikutnya klaim faucet di discord massa di room #testnet-faucet
+Langkah berikutnya klaim faucet di discord massa di room **#testnet-faucet**. Untuk claim faucet sendiri hanya bisa request 1x24 jam.
 
 <img src="https://miro.medium.com/max/2400/0*dpvGhS4tAZmf44Ic.jpeg" style="max-width: 100%;">
 
@@ -75,13 +75,13 @@ buy_rolls YOUR_ADDRESS 1 0
 
 Angka 1 diatas mewakili 100 balance. Jika memiliki 500 balance dan ingin membelikan semua bisa diganti dengan 5 0.
 
-Langkah selanjutnya staking rolls tadi kedalam node agar bisa berjalan. Tunggu sekitar 1 jam 45 menit sampai node aktif
+Langkah selanjutnya staking rolls kedalam node agar bisa berjalan. Tunggu sekitar 1 jam 45 menit sampai node aktif
 
 ```
 node_add_staking_secret_keys YOUR_STAKING_KEYS
 ```
 
->Jangan lupa kalukan detach lagi dengan tekan tombol `ctrl A + D`
+>Jangan lupa lakukan detach jika ingin keluar dengan menekan tombol `ctrl A + D`
 
 Untuk kembali ke screen sebelumnya (screen massa_node / massa_client) masukkan perintah ini di terminal
 
@@ -118,6 +118,7 @@ screen -Rd massa_client
 node_testnet_rewards_program_ownership_proof STAKING_ADDRESS_KAMU ID_DISCORD_KAMU
 ```
 
+
 ## Buat file service
 
 Guna mengantisipasi hal-hal yang tidak diinginkan seperti node macet/trouble maka kita perlu membuat service agar node bisa berjalan otomatis
@@ -144,7 +145,7 @@ EOF
 Selanjutnya aktifkan program dengan perintah ini
 ```
 systemctl daemon-reload
-systemctl enable massad     --> _mengaktifkan service_
-systemctl restart massad    --> _merestart node_
-systemctl status massad     --> _untuk cek status_
+systemctl enable massad     --> mengaktifkan service
+systemctl restart massad    --> merestart node
+systemctl status massad     --> untuk cek status
 ```
