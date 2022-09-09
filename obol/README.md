@@ -5,7 +5,7 @@
 **Step 1. Buat dan backup up private key untuk charon**
 
 ```
-wget -O obol.sh https://github.com/catnodes/obol/blob/main/obol.sh && chmod +x obol.sh && ./obol.sh
+wget -O obol.sh https://github.com/catnodes/testnet/blob/main/obol/obol.sh && chmod +x obol.sh && ./obol.sh
 ```
 
 nanti akan terlihat seperti ini 
@@ -28,7 +28,7 @@ docker run --rm -v "$(pwd):/opt/charon" ghcr.io/obolnetwork/charon:v0.10.0 enr
 >Install dulu ini
 
 ```
-wget -O obol.sh https://github.com/catnodes/obol/blob/main/obol.sh && chmod +x obol.sh && ./obol.sh
+wget -O obol.sh https://github.com/catnodes/testnet/blob/main/obol/obol.sh && chmod +x obol.sh && ./obol.sh
 ```
 
 >setelah itu replace file private key di folder .charon pakai file yang sudah dibackup pakai SFTP
