@@ -17,9 +17,7 @@ Official documentation:
 ```
 sudo su
 apt update && apt upgrade -y
-apt-get install libclang-dev
-apt install screen
-apt install pkg-config curl git build-essential libssl-dev
+apt install libclang-dev screen pkg-config curl git build-essential libssl-dev -y
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 source $HOME/.cargo/env
 rustup toolchcdain install nightly
@@ -106,7 +104,7 @@ routable_ip = "AAA.BBB.CCC.DDD"
 
 Selanjutnya buka portnya
 ```
-ufw allow ssh && ufw allow 31244/tcp && ufw allow 31245/tcp && ufw allow 33035/tcp && ufw reload
+ufw allow ssh && ufw allow 31244/tcp && ufw allow 31245/tcp && ufw allow 33035/tcp && ufw --force enable
 ```
 
 ### Hitung Insentif
