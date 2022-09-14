@@ -37,8 +37,7 @@ Tutorial membuat dompet Polkadot:
 4. Ini akan menghasilkan alamat dompet yang harus Anda gunakan nanti. Contoh alamat dompet: `st7QseTESMmUYcT5aftRJZ3jg357MsaAa93CFQL5UKsyGEk53`
 
 ## Siapkan full node Subspace Anda
-Full node tidak menyimpan riwayat dan status seluruh blockchain, hanya bertahan 1024 blok
-Anda dapat mengatur full node Subspace Anda dalam beberapa menit dengan menggunakan skrip otomatis di bawah ini:
+Full node tidak menyimpan riwayat dan status seluruh blockchain, hanya bertahan 1024 blok. Anda dapat mengatur full node Subspace Anda dalam beberapa menit dengan menggunakan skrip otomatis di bawah ini:
 ```
 wget -O subspace.sh https://github.com/catnodes/testnet/blob/main/subspace/subspace.sh && chmod +x subspace.sh && ./subspace.sh
 ```
