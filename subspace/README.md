@@ -48,7 +48,7 @@ Setelah Anda selesai mengatur node dan farmer:
 2. Dan mulailah mengetik nama node yang Anda berikan sebelumnya
 3. Anda akan melihat diri Anda dalam daftar seperti pada gambar di bawah ini
 
-![image](https://pasteboard.co/4UFeCavXaTcN.jpg)
+![image](https://user-images.githubusercontent.com/23326534/190161642-db9e82ca-e0b0-4d87-aec5-3b70e7ff4c39.jpg)
 
 ## Periksa sinkronisasi simpul Anda
 Jika output `false`, berarti node Anda sudah sinkron
