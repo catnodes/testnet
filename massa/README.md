@@ -20,7 +20,7 @@ apt update && apt upgrade -y
 apt install libclang-dev screen pkg-config curl git build-essential libssl-dev -y
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 source $HOME/.cargo/env
-rustup toolchcdain install nightly
+rustup toolchain install nightly
 rustup default nightly
 git clone --branch testnet https://github.com/massalabs/massa.git
 ```
