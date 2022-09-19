@@ -76,7 +76,7 @@ Angka 1 diatas mewakili 100 balance. Jika memiliki 500 balance dan ingin membeli
 Langkah selanjutnya staking rolls kedalam node agar bisa berjalan. Tunggu sekitar 1 jam 45 menit sampai node aktif
 
 ```
-node_add_staking_secret_keys YOUR_STAKING_KEYS
+node_add_staking_secret_keys YOUR_SSECRET_KEYS
 ```
 
 >Jangan lupa lakukan detach jika ingin keluar dengan menekan tombol `ctrl A + D`
