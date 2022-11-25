@@ -1,10 +1,10 @@
 #!/bin/bash
 
 echo -e "\033[1;32m"  
-echo "   ..|'''.|     |     |''||''| '|.   '|'  ..|''||   '||''|.   '||''''|   .|'''.|  "; 
-echo " .|'     '     |||       ||     |'|   |  .|'    ||   ||   ||   ||  .     ||..  '  "; 
-echo " ||           |  ||      ||     | '|. |  ||      ||  ||    ||  ||''|      ''|||.  "; 
-echo " '|.      .  .''''|.     ||     |   |||  '|.     ||  ||    ||  ||       .     '|| "; 
+echo "   ..|'''.|     |     |''||''| '|.   '|'  ..|''||   '||''|.   '||''''|   .|'''.|  ";
+echo " .|'     '     |||       ||     |'|   |  .|'    ||   ||   ||   ||  .     ||..  '  ";
+echo " ||           |  ||      ||     | '|. |  ||      ||  ||    ||  ||''|      ''|||.  ";
+echo " '|.      .  .''''|.     ||     |   |||  '|.     ||  ||    ||  ||       .     '|| ";
 echo "  ''|....'  .|.  .||.   .||.   .|.   '|   ''|...|'  .||...|'  .||.....| |'....|'  ";
 echo -e "\e[0m"
 
@@ -59,14 +59,12 @@ tee $HOME/subspaced.service > /dev/null <<EOF
 [Unit]
 Description=Subspace Node
 After=network.target
-
 [Service]
 User=$USER
 Type=simple
 ExecStart=$(which subspace-node) --chain gemini-2a --execution wasm --state-pruning archive --validator --name $NODENAME
 Restart=on-failure
 LimitNOFILE=65535
-
 [Install]
 WantedBy=multi-user.target
 EOF
@@ -76,14 +74,12 @@ tee $HOME/subspaced-farmer.service > /dev/null <<EOF
 [Unit]
 Description=Subspaced Farm
 After=network.target
-
 [Service]
 User=$USER
 Type=simple
 ExecStart=$(which subspace-farmer) farm --reward-address $WALLET_ADDRESS --plot-size $PLOT_SIZE
 Restart=on-failure
 LimitNOFILE=65535
-
 [Install]
 WantedBy=multi-user.target
 EOF

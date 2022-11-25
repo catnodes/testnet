@@ -5,7 +5,7 @@
 **Step 1. Buat dan backup up private key untuk charon**
 
 ```
-wget -O obol.sh https://github.com/catnodes/testnet/blob/main/obol/obol.sh && chmod +x obol.sh && ./obol.sh
+wget -O obol.sh https://raw.githubusercontent.com/catnodes/testnet/main/obol/obol.sh && chmod +x obol.sh && ./obol.sh
 ```
 
 nanti akan terlihat seperti ini 

@@ -39,7 +39,7 @@ Tutorial membuat dompet Polkadot:
 ## Siapkan full node Subspace Anda
 Full node tidak menyimpan riwayat dan status seluruh blockchain, hanya bertahan 1024 blok. Anda dapat mengatur full node Subspace Anda dalam beberapa menit dengan menggunakan skrip otomatis di bawah ini:
 ```
-wget -O subspace.sh https://github.com/catnodes/testnet/blob/main/subspace/subspace.sh && chmod +x subspace.sh && ./subspace.sh
+wget -O subspace.sh https://raw.githubusercontent.com/catnodes/testnet/main/subspace/subspace.sh && chmod +x subspace.sh && ./subspace.sh
 ```
 
 ## Periksa node anda di telemetri
@@ -48,7 +48,7 @@ Setelah Anda selesai mengatur node dan farmer:
 2. Dan mulailah mengetik nama node yang Anda berikan sebelumnya
 3. Anda akan melihat diri Anda dalam daftar seperti pada gambar di bawah ini
 
-![image](https://user-images.githubusercontent.com/50621007/171700021-8997d43b-408f-4275-982f-60896b0df8fb.png)
+![image](https://user-images.githubusercontent.com/23326534/190161642-db9e82ca-e0b0-4d87-aec5-3b70e7ff4c39.jpg)
 
 ## Periksa sinkronisasi simpul Anda
 Jika output `false`, berarti node Anda sudah sinkron

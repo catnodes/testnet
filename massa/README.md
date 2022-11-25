@@ -20,7 +20,7 @@ apt update && apt upgrade -y
 apt install libclang-dev screen pkg-config curl git build-essential libssl-dev -y
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 source $HOME/.cargo/env
-rustup toolchcdain install nightly
+rustup toolchain install nightly
 rustup default nightly
 git clone --branch testnet https://github.com/massalabs/massa.git
 ```
@@ -76,7 +76,7 @@ Angka 1 diatas mewakili 100 balance. Jika memiliki 500 balance dan ingin membeli
 Langkah selanjutnya staking rolls kedalam node agar bisa berjalan. Tunggu sekitar 1 jam 45 menit sampai node aktif
 
 ```
-node_add_staking_secret_keys YOUR_STAKING_KEYS
+node_add_staking_secret_keys YOUR_SECRET_KEYS
 ```
 
 >Jangan lupa lakukan detach jika ingin keluar dengan menekan tombol `ctrl A + D`
