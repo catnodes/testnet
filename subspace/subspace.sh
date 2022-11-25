@@ -54,7 +54,7 @@ chmod +x subspace-*
 mv subspace-* /usr/local/bin/
 
 echo -e "\e[1m\e[32m4. Starting service... \e[0m" && sleep 1
-#create subspace-node service 
+# create subspace-node service 
 tee $HOME/subspaced.service > /dev/null <<EOF
 [Unit]
 Description=Subspace Node
